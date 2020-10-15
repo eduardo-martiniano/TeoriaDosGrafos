@@ -28,6 +28,22 @@ public class Lista {
         lista[11].add(9);
         lista[11].add(10);
         print(lista);
+
+    }
+    
+    public static LinkedList[] GerarGrafo(){
+        LinkedList[] lista = new LinkedList[numeroVertices];
+        ligarLista(lista);
+        lista[3].add(8);
+        lista[3].add(10);
+        lista[5].add(11);
+        lista[7].add(8);
+        lista[7].add(11);
+        lista[8].add(9);
+        lista[11].add(2);
+        lista[11].add(9);
+        lista[11].add(10);
+        return lista;
     }
     
     private static void ligarLista(LinkedList[] lista) {
@@ -44,7 +60,6 @@ public class Lista {
                 System.out.print(lista[i].get(j)+ " ");
             }
             System.out.println();
-        
     }
 }
 }
