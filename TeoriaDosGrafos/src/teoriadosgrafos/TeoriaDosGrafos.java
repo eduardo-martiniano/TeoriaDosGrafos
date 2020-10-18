@@ -21,6 +21,11 @@ public class TeoriaDosGrafos {
         System.out.println("===========================");
         
         System.out.println("Esse grafo é completo? " + MetodosBasicos.EhCompleto(grafo));
+        
+        var conexo = new GrafoConexo();
+        var r = conexo.Ehconexo(50);
+        System.out.println(r);
+        
     }
     
 }
