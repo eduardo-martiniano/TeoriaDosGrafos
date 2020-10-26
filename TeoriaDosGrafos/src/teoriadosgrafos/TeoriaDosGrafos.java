@@ -26,8 +26,17 @@ public class TeoriaDosGrafos {
         System.out.println("Esse grafo é completo? " + MetodosBasicos.EhCompleto(grafo));
 
         System.out.println("===========================");
-        System.out.println("===========================");
         
+        System.out.println("O grafo é conexo? ");
+        
+        var grafoConexo = new MetodosBasicos();
+        var conexo = grafoConexo.Ehconexo(50);
+        System.out.println(conexo);
+        
+        
+        System.out.println("===========================");
+
+        System.out.println("Algoritimo de Djikstra");
         //Djikstra
         int numVértices = 5; 
 	int origem = 0; 
@@ -65,11 +74,3 @@ public class TeoriaDosGrafos {
             System.out.println("O caminho mais curto desde o Vértice "+origem + " para " + i + " é "+ D.distância[i]); }
 	} 
 } 
-        var conexo = new GrafoConexo();
-        var r = conexo.Ehconexo(50);
-        System.out.println(r);
-        
-    }
-    
-    
-
