@@ -24,6 +24,7 @@ public class TeoriaDosGrafos {
         System.out.println("===========================");
         
         System.out.println("Esse grafo é completo? " + MetodosBasicos.EhCompleto(grafo));
+
         System.out.println("===========================");
         System.out.println("===========================");
         
@@ -64,6 +65,11 @@ public class TeoriaDosGrafos {
             System.out.println("O caminho mais curto desde o Vértice "+origem + " para " + i + " é "+ D.distância[i]); }
 	} 
 } 
+        var conexo = new GrafoConexo();
+        var r = conexo.Ehconexo(50);
+        System.out.println(r);
+        
+    }
     
     
 
