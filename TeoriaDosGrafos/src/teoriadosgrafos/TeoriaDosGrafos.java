@@ -33,7 +33,6 @@ public class TeoriaDosGrafos {
         var conexo = grafoConexo.Ehconexo(50);
         System.out.println(conexo);
         
-        
         System.out.println("===========================");
 
         System.out.println("Algoritimo de Djikstra");
@@ -51,6 +50,7 @@ public class TeoriaDosGrafos {
 		adjacência.add(item); 
 		} 
 
+        System.out.println("Grafo para o algoritimo de menor caminho -> 0-1 0-2 1-4 1-3 2-1 2-3 3-4");
 	// Alimentando um grafo novo para o Djikstra, colocando os pesos das arestas visto que o grafo anterior não possui peso em suas arestas 
 	adjacência.get(0).add(new Vértice(1, 5)); 
 	adjacência.get(0).add(new Vértice(2, 2)); 
@@ -59,7 +59,7 @@ public class TeoriaDosGrafos {
         adjacência.get(2).add(new Vértice(1, 4)); 
 	adjacência.get(2).add(new Vértice(3, 10));
         adjacência.get(3).add(new Vértice(4, 6));
-                
+        
                 
                 
 
